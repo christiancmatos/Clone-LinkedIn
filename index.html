@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Linkedin</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="left">
+                <div class="logo">
+                   <img src="images/linkedin-logo.svg" alt="Logo do LinkedIn">
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Pesquisar">
+                    <button><img src="images/search.png" alt=""></button>
+                </div>
+                
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="#">Início</a>
+                    </li>
+                    <li>
+                        <a href="#">Mensagens</a>
+                    </li>
+                    <li>
+                        <a href="#">Notificações</a>
+                    </li>
+                    <li class="profile-image">
+                        <img src="images/profile-image.jpg" alt="Image de perfil do usuário">  
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container">
+
+            <aside class="profile-info">
+                <div class="profile">
+                    <div class="profile-background-image">
+                        <img src="images/background-profile-img.jpeg" alt="">
+                    </div>
+                    <div class="profile-image">
+                        <img src="images/profile-image.jpg" alt="Image de perfil do usuário">
+                    </div>
+                    <p class="username">Christian Matos</p>
+                    <p class="occupation-info">Assistente Administrativo | Kroton</p>
+                    <div class="skills-info">
+                        <h4>Habilidades</h4>
+                        <ul>
+                            <li>Javascript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </aside>
+        
+            
+            <section class="posts-area">
+
+                <div class="make-a-post">
+                    <div class="profile-image">
+                        <img src="images/profile-image.jpg" alt="Image de perfil do usuário">
+                    </div>
+                    <div class="post-button">
+                        <button>Fazer uma publicação</button>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+                        
+                <div class="posts">
+                
+                </div>
+
+            </section>
+
+            <aside class="advertising-area">
+
+                <div class="advertising">
+                    <div class="advertising-image">
+                        <img src="images/advertising1.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Christian, explore oportunidades relevantes na organização <span>Amazon.com, Inc.</span></p>    
+                    </div>
+                    <div>
+                        <a href="#">Seguir</a>    
+                    </div>
+                </div>
+                
+                <div class="advertising">
+                    <div class="advertising-image">
+                        <img src="images/advertising2.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Christian, explore oportunidades relevantes na organização <span>Google LLC.</span></p>    
+                    </div>
+                    <div>
+                        <a href="#">Seguir</a>    
+                    </div>
+                </div>
+
+                <div class="advertising">
+                    <div class="advertising-image">
+                        <img src="images/advertising3.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Christian, explore oportunidades relevantes na organização <span>Microsoft Corporation.</span></p>    
+                    </div>
+                    <div>
+                        <a href="#">Seguir</a>    
+                    </div>
+                </div>
+
+            </aside>
+
+        </div>
+    </main>    
+
+    <div class="modal-post" >
+        <form action="#">
+            <div class="modal-post-title">
+                <h2>Criar Publicação</h2>
+                <button class="close-modal">
+                    <img src="images/close-menu-options.png" alt="">
+                </button>
+            </div>
+            <div class="modal-header">
+                <div class="profile-image">
+                    <img src="images/profile-image.jpg" alt="Image de perfil do usuário">    
+                </div>
+                <div class="user-infos">
+                    <p class="username-in-modal">Christian Matos</p>
+                    <p class="occupation-in-modal">Assistente Administrativo | Kroton</p>
+                </div>
+            </div>
+
+            <textarea id="post-content" name="post-content" cols="30" rows="10" placeholder="Sobre o que você quer falar?"></textarea>    
+            
+            <div class="button">
+                <button class="confirm-post-button">Postar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="edit-post-modal" >
+        <form action="#">
+            <div class="edit-modal-post-title">
+                <h2>Editar Publicação</h2>
+                <button class="close-edit-post-modal">
+                    <img src="images/close-menu-options.png" alt="">
+                </button>
+            </div>
+            <div class="edit-post-modal-header">
+                <div class="profile-image">
+                    <img src="images/profile-image.jpg" alt="Image de perfil do usuário">    
+                </div>
+                <div class="user-infos-in-modal">
+                    <p class="username-in-modal">Christian Matos</p>
+                    <p class="occupation-in-modal">Assistente Administrativo | Kroton</p>
+                </div>
+            </div>
+
+            <textarea id="edit-post-content" name="textarea" cols="30" rows="10"></textarea>    
+            
+            <div class="button">
+                <button class="edit-post-button">Confirmar Alteração</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="scripts/script.js"></script>
+</body>
+</html>
