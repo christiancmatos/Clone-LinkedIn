@@ -680,7 +680,7 @@ main .container {
     }
 
     .profile-background-image {
-        background: url('images/background-profile-img.jpeg');
+        background: url('../images/background-profile-img.jpeg');
         background-position: center;
         background-size: cover;
         height: 6rem;
